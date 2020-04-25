@@ -22,6 +22,7 @@ export default function Home() {
         <h1>Insira sua Conta Riot</h1>
         <Input type="text" placeholder="Nome de usuário"/>
         <Input type="password" placeholder="Senha"/>
+        <Input type="checkbox"></Input>
 
       </div>
 
