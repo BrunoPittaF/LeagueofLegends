@@ -26,6 +26,7 @@ export const Shadow = theme("mode", {
   dark: "#fff2"
 });
 
+
 export const Button = styled.button`
   background-color: ${MiddleSecondBackground};
   color: ${TextColor};
@@ -45,3 +46,15 @@ export const ButtonOutline = styled(Button)`
   background-color: transparent;
   border: 1px solid ${TextColor};
 `;
+
+export const Input = styled.input`
+    background-color: lightgrey;
+    border-radius: 4px;
+    border: none;
+    height: 5px;
+    padding: 20px;
+    color: black;
+    width: 230px;
+    margin: 12px 0px;
+
+`
