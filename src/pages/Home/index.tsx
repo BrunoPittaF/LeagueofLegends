@@ -28,7 +28,7 @@ export default function Home() {
         <label htmlFor="check">Manter login</label>
         </p>
 
-        <FiArrowRight className="seta" size={35} color="grey"/>
+        <FiArrowRight className="seta" size={35} color="#dbdbdb"/>
 
         <div className="notas">
         <a href="#teste">criar conta</a>

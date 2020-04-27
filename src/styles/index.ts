@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
       margin: 50px auto;
       height: 540px;
       .login{
-        background-color: #f5f5f5;
+        background-color: #f9f9f9;
         padding: 20px 30px;
         display: flex;
         flex-direction: column;
@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
           display: flex;
           justify-content: space-between;
           align-items: center;
+          width: 270px;
           img{
             width: 50px;
           }
@@ -56,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
         }
         .seta{
           align-self: center;
-          border: 1px solid black;
+          border: 2px solid #dbdbdb;
           border-radius: 22px;
           padding: 12px;
           margin: 40px 0px 70px;

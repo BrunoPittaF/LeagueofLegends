@@ -48,21 +48,50 @@ export const ButtonOutline = styled(Button)`
 `;
 
 export const Input = styled.input`
-    background-color: lightgrey;
-    border-radius: 4px;
+    background-color: #ededed;
+    border-radius: 6px;
     border: none;
     height: 5px;
     padding: 20px;
     color: black;
     width: 230px;
     margin: 8px 0px;
+    font-weight: bold;
+    &:focus{
+      border: 2px solid black;
+      outline: none;
+      transition: margin-top 2s;
+      &::-webkit-input-placeholder {
+            font-size: 8px;
+            
+          }
+
+          &:-moz-placeholder { 
+            color: red;  
+          }
+
+         &::-moz-placeholder {  
+            color: red;  
+          }
+
+          &:-ms-input-placeholder {  
+            color: red;  
+          }
+    }
+    &:placeholder-shown{
+      color: black;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
 `
 
 export const Checkbox = styled.input`
     height: 16px;
     border: none;
     border-radius: 4px;
-    background-color: lightgrey;
+    background-color: #ededed;
     margin: 0;
     margin-right: 6px;  
 
