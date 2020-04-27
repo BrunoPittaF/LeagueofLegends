@@ -55,6 +55,15 @@ export const Input = styled.input`
     padding: 20px;
     color: black;
     width: 230px;
-    margin: 12px 0px;
+    margin: 8px 0px;
+`
+
+export const Checkbox = styled.input`
+    height: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: lightgrey;
+    margin: 0;
+    margin-right: 6px;  
 
 `

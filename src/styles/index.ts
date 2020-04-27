@@ -3,12 +3,17 @@ import { FuhthestBackground, TextColor } from "./components";
 
 
 const GlobalStyle = createGlobalStyle`
+  *{
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+  }
   body{
     background-color: ${FuhthestBackground};
     color:${TextColor};
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Quicksand", "sans-serif";
+   
   }
   main{
     .grid{
@@ -21,6 +26,8 @@ const GlobalStyle = createGlobalStyle`
       .login{
         background-color: #f5f5f5;
         padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
         header{
           display: flex;
           justify-content: space-between;
@@ -41,6 +48,48 @@ const GlobalStyle = createGlobalStyle`
           font-weight: bold;
           margin-top: 60px;
           margin-bottom: 30px;
+        }
+        p{
+          display: flex;
+          align-items: center;
+          margin: 10px 0px;
+        }
+        .seta{
+          align-self: center;
+          border: 1px solid black;
+          border-radius: 22px;
+          padding: 12px;
+          margin: 40px 0px 70px;
+        }
+        .notas{
+          width: 270px;
+          a{
+            color: grey;
+            text-decoration: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            &:hover{
+              color: black;
+              font-weight: bold;
+            }
+          }
+          p{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            span{
+              color: grey;
+              text-decoration: none;
+              font-size: 10px;
+              text-transform: uppercase;
+              cursor: pointer;
+              &:hover{
+              color: black;
+              font-weight: bold;
+            }
+            }
+          }
         }
       }
       .wallpaper{
