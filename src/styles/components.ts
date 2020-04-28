@@ -60,30 +60,17 @@ export const Input = styled.input`
     &:focus{
       border: 2px solid black;
       outline: none;
-      transition: margin-top 2s;
-      &::-webkit-input-placeholder {
-            font-size: 8px;
-            
-          }
-
-          &:-moz-placeholder { 
-            color: red;  
-          }
-
-         &::-moz-placeholder {  
-            color: red;  
-          }
-
-          &:-ms-input-placeholder {  
-            color: red;  
-          }
+     & + label{
+                line-height: 2.8;
+                font-size: 12px;
+              }
     }
-    &:placeholder-shown{
-      color: black;
-      text-transform: uppercase;
-      font-size: 11px;
-      font-weight: bold;
-    }
+      &:valid {
+       & +label{
+                line-height: 2.8;
+                font-size: 12px;
+        }
+     }
 
 `
 

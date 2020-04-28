@@ -17,12 +17,30 @@ export default function Home() {
         <header>
           <img src={logo} alt=""/>
           <span>?</span>
+          <div className="boxHover">
+            <p>Você não precisa mais selecionar uma região antes de fazer login.
+               Quando fizer login, a região associada à sua conta será atualizada
+                automaticamente.</p>
+                <p>
+                Se estiver com problemas para fazer login,<a href="criar conta">talvez precise atualizar sua conta.</a> 
+                </p>
+
+          </div>
         </header>
         
 
         <h1>Insira sua Conta Riot</h1>
-        <Input type="text" placeholder="Nome de usuário"/>
-        <Input type="password" placeholder="Senha"/>
+        
+        <div className="campos">
+        <Input type="text" id="name"/>
+        <label htmlFor="name">Nome de usuário</label>
+        </div>
+        
+        <div className="campos">
+        <Input type="password" id="senha"/>       
+         <label htmlFor="senha">Senha</label>
+        </div>
+
         <p>
         <Checkbox type="checkbox" name="check"/>
         <label htmlFor="check">Manter login</label>

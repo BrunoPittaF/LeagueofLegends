@@ -5,15 +5,14 @@ import { FuhthestBackground, TextColor } from "./components";
 const GlobalStyle = createGlobalStyle`
   *{
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", "sans-serif";
   }
   body{
     background-color: ${FuhthestBackground};
     color:${TextColor};
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", "sans-serif";
-   
   }
   main{
     .grid{
@@ -28,20 +27,58 @@ const GlobalStyle = createGlobalStyle`
         padding: 20px 30px;
         display: flex;
         flex-direction: column;
+        .campos{
+          position: relative;
+          label{
+            position: absolute;
+            top: 0;
+            left: 15px;
+            font-size: 14px;
+            line-height: 4;
+            cursor: text;
+            transition: line-height linear 1s;
+          }
+        }
         header{
           display: flex;
-          justify-content: space-between;
+         /* justify-content: space-between;*/
           align-items: center;
           width: 270px;
+          position: relative;
+          height: 50px;
           img{
             width: 50px;
           }
           span{
-            font-size: 15px;
+            font-size: 13px;
             color: white;
             background-color: grey;
             padding: 0px 5px;
             border-radius: 100%;
+            position: absolute;
+            right: 0;
+            &:hover{
+              + div{
+                display: block;
+              }
+            }
+          }
+          .boxHover{
+            display: none;
+            width: 600px;
+            height: 300px;
+            transform: translate(140%, 40%);
+            background-color: white;
+            p{
+              font-size: 14px;
+              font-weight: bold;
+              padding: 20px;
+              margin: 0;
+              a{
+                text-decoration: none;
+                color: #333;
+              }
+            }
           }
         }
         h1{
