@@ -8,7 +8,6 @@ import { FiArrowRight} from 'react-icons/fi';
 
 export default function Home() {
   //const themeToggle = useTheme();
-
   return (
     <main>
     { /* <Button onClick={() => themeToggle.toggle()}>Toggle Theme</Button> */ }
@@ -45,9 +44,7 @@ export default function Home() {
         <Checkbox type="checkbox" name="check"/>
         <label htmlFor="check">Manter login</label>
         </p>
-
-        <FiArrowRight className="seta" size={35} color="#dbdbdb"/>
-
+        <FiArrowRight size={35} color="#dbdbdb"/>
         <div className="notas">
         <a href="#teste">criar conta</a>
        <p> 

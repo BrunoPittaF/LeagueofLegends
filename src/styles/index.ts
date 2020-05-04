@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
             display: none;
             width: 600px;
             height: 300px;
-            transform: translate(140%, 40%);
+            transform: translate(108%,37%);
             background-color: white;
             p{
               font-size: 14px;
@@ -92,7 +92,7 @@ const GlobalStyle = createGlobalStyle`
           align-items: center;
           margin: 10px 0px;
         }
-        .seta{
+        svg{
           align-self: center;
           border: 2px solid #dbdbdb;
           border-radius: 22px;
