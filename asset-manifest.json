@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/BrunoPittaF/LeagueofLegends/static/js/main.b297a6c2.chunk.js",
+    "main.js.map": "/BrunoPittaF/LeagueofLegends/static/js/main.b297a6c2.chunk.js.map",
+    "runtime-main.js": "/BrunoPittaF/LeagueofLegends/static/js/runtime-main.e47c5bf3.js",
+    "runtime-main.js.map": "/BrunoPittaF/LeagueofLegends/static/js/runtime-main.e47c5bf3.js.map",
+    "static/js/2.81e86028.chunk.js": "/BrunoPittaF/LeagueofLegends/static/js/2.81e86028.chunk.js",
+    "static/js/2.81e86028.chunk.js.map": "/BrunoPittaF/LeagueofLegends/static/js/2.81e86028.chunk.js.map",
+    "index.html": "/BrunoPittaF/LeagueofLegends/index.html",
+    "precache-manifest.b002294cf4f242c0488190eba769157f.js": "/BrunoPittaF/LeagueofLegends/precache-manifest.b002294cf4f242c0488190eba769157f.js",
+    "service-worker.js": "/BrunoPittaF/LeagueofLegends/service-worker.js",
+    "static/media/logo.svg": "/BrunoPittaF/LeagueofLegends/static/media/logo.5742ab23.svg",
+    "static/media/lol.jpg": "/BrunoPittaF/LeagueofLegends/static/media/lol.60785311.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e47c5bf3.js",
+    "static/js/2.81e86028.chunk.js",
+    "static/js/main.b297a6c2.chunk.js"
+  ]
+}
