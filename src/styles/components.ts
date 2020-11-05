@@ -26,6 +26,11 @@ export const Shadow = theme("mode", {
   dark: "#fff2"
 });
 
+export const MainBackground = theme("mode", {
+  dark: "#0a090e",
+  light: "#fff"  
+});
+
 
 export const Button = styled.button`
   background-color: ${MiddleSecondBackground};
@@ -77,4 +82,11 @@ export const Checkbox = styled.input`
     margin: 0;
     margin-right: 6px;  
 
-`
+`;
+
+export const Container = styled.div`
+    width: 1200px;
+    max-width: 1800px;
+    margin: 50px auto;
+    height: 540px;
+`;
