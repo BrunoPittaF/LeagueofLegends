@@ -31,12 +31,12 @@ const GlobalStyle = createGlobalStyle`
           position: relative;
           label{
             position: absolute;
-            top: 0;
+            top: 20px;
             left: 15px;
             font-size: 14px;
-            line-height: 4;
             cursor: text;
-            transition: line-height linear 1s;
+            transition: top linear 1s;
+            transition: left linear 1s;
           }
         }
         header{

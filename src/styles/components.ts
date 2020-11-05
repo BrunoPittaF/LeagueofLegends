@@ -61,16 +61,11 @@ export const Input = styled.input`
       border: 2px solid black;
       outline: none;
      & + label{
-                line-height: 2.8;
-                font-size: 12px;
+        top: 10px !important;
+        font-size: 12px !important;
+        left: 6px !important;
               }
     }
-      &:valid {
-       & +label{
-                line-height: 2.8;
-                font-size: 12px;
-        }
-     }
 
 `
 
