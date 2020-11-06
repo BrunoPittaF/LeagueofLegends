@@ -18,15 +18,21 @@ const GlobalStyle = createGlobalStyle`
     .grid{
       display: grid;
       grid-template-columns: 30% 70%;
-      width: 1200px;
       max-width: 1800px;
       margin: 50px auto;
       height: 540px;
+      @media screen and (max-width: 1024px){
+        grid-template-columns: 1fr;
+        margin: 0;
+      }
       .login{
         background-color: #f9f9f9;
         padding: 20px 30px;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 1024px){
+          align-items: center;
+        }
         .campos{
           position: relative;
           label{
@@ -92,12 +98,15 @@ const GlobalStyle = createGlobalStyle`
           align-items: center;
           margin: 10px 0px;
         }
-        svg{
+        a{
+          width: 63px;
+          svg{
           align-self: center;
           border: 2px solid #dbdbdb;
           border-radius: 22px;
           padding: 12px;
           margin: 40px 0px 70px;
+        }
         }
         .notas{
           width: 270px;
@@ -131,6 +140,9 @@ const GlobalStyle = createGlobalStyle`
         }
       }
       .wallpaper{
+        @media screen and (max-width: 1024px){
+        grid-row-start: 1;
+      }
         img{
           width: 100%;
           height: 100%;

@@ -4,6 +4,7 @@ import { Input, Checkbox } from "src/styles/components";
 import  league from '../../assets/lol.jpg';
 import logo from '../../assets/logo.svg';
 import { FiArrowRight} from 'react-icons/fi';
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -23,7 +24,6 @@ export default function Home() {
                 <p>
                 Se estiver com problemas para fazer login,<a href="criar conta">talvez precise atualizar sua conta.</a> 
                 </p>
-
           </div>
         </header>
         
@@ -31,12 +31,12 @@ export default function Home() {
         <h1>Insira sua Conta Riot</h1>
         
         <div className="campos">
-        <Input type="text" id="name"/>
+        <Input type="text" id="name" />
         <label htmlFor="name">Nome de usuário</label>
         </div>
         
         <div className="campos">
-        <Input type="password" id="senha"/>       
+        <Input type="password" id="senha" />       
          <label htmlFor="senha">Senha</label>
         </div>
 
@@ -44,7 +44,11 @@ export default function Home() {
         <Checkbox type="checkbox" name="check"/>
         <label htmlFor="check">Manter login</label>
         </p>
+        
+        <Link to="/main"> 
         <FiArrowRight size={35} color="#dbdbdb"/>
+        </Link>
+        
         <div className="notas">
         <a href="#teste">criar conta</a>
        <p> 
@@ -57,14 +61,8 @@ export default function Home() {
 
       <div className="wallpaper">
         <img src={league} alt="Champions"/>
-
       </div>
-
-
-
-
-
-
+    
     </div>
     </main>
   );
