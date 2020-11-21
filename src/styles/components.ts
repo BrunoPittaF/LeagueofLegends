@@ -89,4 +89,20 @@ export const Container = styled.div`
     max-width: 1800px;
     margin: 50px auto;
     height: 540px;
+    display: flex;
+`;
+
+
+export const Nav = styled.nav`
+  ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    li{
+      padding: 0px 10px;
+      text-transform: uppercase;
+      color: #ccbe95;
+    }
+  }
+
 `;
