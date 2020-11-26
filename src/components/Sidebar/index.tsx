@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-// import { Container } from './styles';
+import { SidebarContent } from './styles';
+
+import logo from '../../assets/logo.svg';
+import { Iphotos } from '../../interfaces';
+import api from 'src/services/api';
 
 const Sidebar: React.FC = () => {
+  const [photos, setPhotos] = useState<Iphotos>();
+
+  useEffect(() =>{
+    api.get(`photos/1`).then(response => {
+      setPhotos(response.data);
+    });
+  }, []);
+
+  if(!photos){
+    return <p>Carregando...</p>
+  }
+
   return (
-    <h1>Espaço para lista de amigos</h1>
+      <SidebarContent>
+          <img src={photos.url} alt=""/>
+        </SidebarContent>
     );
 }
 
